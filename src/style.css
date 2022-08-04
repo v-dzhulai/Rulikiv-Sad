@@ -1,0 +1,307 @@
+body {
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.wrapper {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: 120px;
+    background: black;
+}
+
+header, main {color: white;}
+
+header .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotype {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.logotype_img {
+    width: 100px;
+}
+
+.logotype img {
+    width: 100%;
+}
+
+.logotype:hover {color: #BE202E;}
+
+header a {
+    font-size: 20px;
+    margin-left: 40px;
+    transition: color .3s;
+}
+
+header a:hover {color: #BE202E;}
+
+.menu i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#move_top {
+    width: 100px;
+    height: 160px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 75px;
+    z-index: 100;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#move_top:hover {
+    opacity: 0.6;
+    color: #BE202E;
+}
+
+.modal_window {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.modal_navbar {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.modal_navbar a {
+    display: inline-block;
+    margin: auto;
+}
+
+.modal_navbar a:hover {
+    color: #BE202E;
+}
+
+#contacts_window {
+    margin-top: 100px;
+    width: 270px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#contacts_window span {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+main {
+    height: 577px;
+    background: url('./img/strawberries.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    transition: opacity 0.8s;
+    position: relative;
+}
+
+.modal_window {
+    position: absolute;
+    width: 100%;
+    height: 578px;
+    top: 119px;
+    background: black;
+    z-index: 100;
+}
+
+#contact_us {
+    width: 250px;
+    opacity: 0;
+    background: black;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+#contact_us span {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .wrapper {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+h1 {
+    font-size: 132px;
+    font-family: 'Lobster', cursive;
+}
+
+.slider_button {
+    font-size: 21px;
+    width: 50px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    transition-duration: 0.3s;
+}
+
+.slider_button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #BE202E;
+    cursor: pointer;
+}
+
+.img_items {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin: auto;
+}
+
+.img_item {
+    background: white;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.img_item:hover,
+.img_item_active {
+    background-color: #BE202E;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.title_line {
+    width: 60px;
+    height: 2px;
+    margin: 10px auto 30px;
+    background-color: #BE202E;
+}
+
+/*
+    Section ARTICLES
+*/
+.articles_items {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#row_2 {
+    margin-top: 50px;
+}
+
+.article_item {
+    width: 365px;
+    text-align: left;
+}
+
+.article_image {
+    height: 234px;
+}
+
+.article_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.article_describe,
+.article_title {
+    background: whitesmoke;
+}
+
+.article_describe p {
+    padding: 23px;
+}
+
+.article_title {
+    font-size: 20px;
+    padding: 23px;
+}
+
+.products_describe {
+    text-align: left;
+    margin-top: 50px;
+}
+
+/*
+    Section ABOUT_US
+*/
+.about_us_text {
+    font-size: 20px;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about_us_img {
+    width: 500px;
+}
+
+.about_us_img img {
+    width: 100%;
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ua" id="top">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Руликів Сад</title>
+        
+        <link rel="stylesheet" href="./src/reset.css">
+        <link rel="stylesheet" href="./src/style.css">
+        <link rel="stylesheet" href="./src/media.css">
+
+        <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/cac64ec55e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="logotype">
+                    <div class="logotype_img">
+                        <img src="./src/img/logo.png" alt="">
+                    </div>
+                    <span>Руликів Сад</span>
+                </div>
+
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+    
+                <nav class="navbar">
+                    <a href="#articles"   data-scroll="#articles">продукція</a>
+                    <a href="#about_us"   data-scroll="#about_us">про нас</a>
+                    <a id="contact_window">
+                        контакти
+                        <i class="fas fa-angle-down"
+                           style="font-size: 16px"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <div id="contact_us">
+                <span><strong>Телефон:</strong> +38 098 446 00 67</span><br/>
+                <span><strong>Viber:</strong> +38 093 575 53 79</span><br/>
+                <span><strong>email:</strong>   dzhulive@gmail.com</span>
+            </div>
+        </div>
+
+        <a href="#top" data-scroll="#top" class="move_top">
+            <div id="move_top">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </a>
+
+        <div class="modal_window">
+            <nav class="modal_navbar">
+                <a href="#articles"   data-scroll="#articles">продукція</a>
+                <a href="#about_us"   data-scroll="#about_us">про нас</a>
+                <a href="#contact_window" 
+                   data-scroll="#contact_window" 
+                   id="contact_modal_window">
+                   контакти
+                   <i class="fas fa-angle-down" style="font-size: 16px"></i>
+                </a>
+            </nav>
+
+            <div id="contacts_window">
+                <span><strong>Телефон:</strong> +38 098 446 00 67</span><br/>
+                <span><strong>Viber:</strong> +38 093 575 53 79</span><br/>
+                <span><strong>email:</strong>   dzhulive@gmail.com</span>
+            </div>
+        </div>
+
+        <main>
+            <div class="wrapper">
+                <div class="top">
+                    <div class="slider_button" id="prev"><i class="fas fa-angle-left"></i></div>
+                    <h1>Руликів Сад</h1>
+                    <div class="slider_button" id="next"><i class="fas fa-angle-right"></i></div>
+                </div>
+    
+                <div class="img_items">
+                    <div class="img_item img_item_active"></div>
+                    <div class="img_item"></div>
+                    <div class="img_item"></div>
+                    <div class="img_item"></div>
+                </div>
+            </div>
+        </main>
+
+        <section class="products" id="articles">
+            <div class="wrapper">
+                <h2>Продукція</h2>
+                <div class="title_line"></div>
+
+                <p><em>
+                    Властивості наших соків обумовлені високим вмістом в них біологічно активних речовин - 
+                    вітамінів, мінералів та макроелементів. Наш сік зміцнює імунітет, захищає організм від хвороботворних 
+                    вірусів та бактерій. Вироблено з натуральної сировини без штучних домішок, без додавання води, цукру, 
+                    ароматизаторів та консервантів, за традиційною технологією прямого віджиму. Кожна партія проходить 
+                    лабораторний контроль та відповідає екологічним стандартам. Максимально збережено користь та смак 
+                    свіжих плодів та ягід.
+                </em></p>
+
+                <div class="articles_items">
+                    <div class="row" id="row_1">
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_1">
+                                <img src="./src/img/strawberries.jpg" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: білки - 0,6 г., жири - 0,3 г., вуглеводи - 7 г. 
+                                Енергетична цінність в 100 г. продукту: 30 кКал. Об'єм упкаковки 1,3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Полуничний сік - 59 грн.</span>
+                            </div>
+                        </div>
+
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_2">
+                                <img src="./src/img/plums.jpg" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: вуглеводи - 16,1 г. Енергетична цінність в 100 г. 
+                                продукту: 66 кКал. Об'єм упаковки 3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Сливовий сік - 109 грн.</span>
+                            </div>
+                        </div>
+
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_3">
+                                <img src="./src/img/apples.jpg" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: білки - 1 г., жири - 0,1 г., вуглеводи - 10 г. 
+                                Енергетична цінність в 100 г. продукту: 46 кКал. Об'єм упаковки 3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Яблучний сік - 109 грн.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="row_2">
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_6">
+                                <img src="./src/img/tomatoes.webp" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: білки - 0,7 г., вуглеводи - 4,6 г. Енергетична 
+                                цінність в 100 г. продукту: 23 кКал. Об'єм упаковки 3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Томатний сік - 109 грн.</span>
+                            </div>
+                        </div>
+
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_4">
+                                <img src="./src/img/apples.jpg" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: білки - 0,4 г., вуглеводи - 8 г. Енергетична цінність 
+                                в 100 г. продукту: 34 кКал. Об'єм упаковки 3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Яблучно-полуничний сік - 109 грн.</span>
+                            </div>
+                        </div>
+
+                        <div class="article_item">
+                            <div class="article_image" id="article_image_5">
+                                <img src="./src/img/plums.jpg" alt="">
+                            </div>
+                            
+                            <div class="article_describe">
+                                <p>Поживна цінність в 100 г. продукту: вуглеводи - 10,2 г. Енергетична цінність в 100 г. 
+                                продукту: 48 кКал. Об'єм упаковки 3 л.</p>
+                            </div>
+                            
+                            <div class="article_title">
+                                <span>Яблучно-сливовий сік - 109 грн.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products_describe">
+                    <p>
+                    <em>
+                        <strong>Строк придатності до споживання:</strong> 12 місяців, за умов зберігання у сухих 
+                        приміщеннях при температурі від 0 °С до 25 °С та відносній вологості повітря не більше 75%. 
+                        Захищати від прямих сонячних променів. Допускається осад.<br />
+                    
+                        <strong>Перед вживанням збовтати.</strong><br />
+                        
+                        <strong>Строк придатності після відкриття:</strong> 10 діб при температурі від 0 °С до 6 °С. 
+                    </em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_us" id="about_us">
+            <div class="wrapper">
+                <h2>Про нас</h2>
+                <div class="title_line"></div>
+
+                <div class="content">
+                    <div class="about_us_text">
+                        <em>
+                            <p class="about_us_paragraph">
+                                - Справжній природній смак соків ТМ "Руликів Сад" забезпечує технологія прямого віджиму, за допомогою 
+                                якої максимально зберігається смак та користь свіжих плодів і ягід.
+                            </p>
+                            
+                            <p style="margin: 25px 0;">
+                                - Натуральні соки ТМ "Руликів Сад" виготовляються без додавання консервантів, барвників та 
+                                ароматизаторів. Сік витискається з плодів, проходить миттєву теплову обробку та розливається в 
+                                пакети.
+                            </p>
+            
+                            <p>
+                                - Виробничі потужності на яких виготовляються соки ТМ "Руликів Сад", знаходяться в безпосередній 
+                                близькості від полів з полуницею, яблучних та сливових садів, тож фрукти та ягоди потрапляють 
+                                на переробку одразу з саду й поля, що забезпечує збереження всіх корисних елементів та вітамінів.
+                            </p>
+                        </em>
+                    </div>
+                    
+                    <div class="about_us_img">
+                        <img src="./src/img/appleGarden.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+                crossorigin="anonymous"></script>
+        <script src="./src/script.js"></script>
+    </body>
+</html>
